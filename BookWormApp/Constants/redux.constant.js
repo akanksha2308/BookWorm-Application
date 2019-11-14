@@ -1,0 +1,1 @@
+export const BOOK_DETAILS = 'BOOK_DETAILS';

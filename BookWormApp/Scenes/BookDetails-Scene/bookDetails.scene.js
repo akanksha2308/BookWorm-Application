@@ -30,8 +30,8 @@ export default class BookDetailsScene extends Component {
                     <Text style={{ color: '#fff', fontSize: 16, fontWeight: 'bold' }}>{_.truncate(bookDetails.name, { length: 24 })}</Text>
                     <Text style={{ color: '#fff', fontSize: 14, marginTop: 5 }}>Author: {bookDetails.author}</Text>
                     <Text style={{ color: '#fff', fontSize: 12, marginTop: 5 }}>Genre: {bookDetails.genre}</Text>
-                    <TouchableOpacity onPress={() => { this.setState({ isFavorite: !isFavorite }) }} style={{ position: 'absolute', top: 0, right: 10 }}>
-                        <Image style={{ width: 20, height: 20, resizeMode: 'contain' }} source={isFavorite ? HeartRedIcon() : HeartIcon()} />
+                    <TouchableOpacity onPress={() => { this.setState({ isFavorite: !isFavorite }) }} style={{ position: 'absolute', bottom: 0, right: 5 }}>
+                        <Image style={{ width: 22, height: 22, resizeMode: 'contain' }} source={isFavorite ? HeartRedIcon() : HeartIcon()} />
                     </TouchableOpacity>
                 </View>
             </View>
